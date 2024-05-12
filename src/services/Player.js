@@ -10,7 +10,8 @@ export default class Player {
 	constructor(domElement) {
 		this._container = domElement;
 		// Renderer
-
+		// Ideally, best to have 2 Renderers one for the point cloud and one for the objects in the scene
+		// that way, you can render the objects without rendering the point cloud 
 		this._renderer = new THREE.WebGLRenderer({
 			antialias: true,
 			alpha: true,
